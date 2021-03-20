@@ -13,13 +13,6 @@ const DebugNav = styled.nav`
   padding: 1rem;
 `;
 
-const BriefWrap = styled.div`
-  padding: 1rem;
-  background: #d2ffe7;
-  margin-top: 2rem;
-  text-align: left;
-`;
-
 export default function App() {
   const [items, setItems] = useState([]);
   const [isRunning, setIsRunning] = useState(false);
@@ -63,40 +56,6 @@ export default function App() {
 
   return (
     <div className="App">
-      <BriefWrap>
-        <h1>Alert Stream Challenge</h1>
-        <h3>Brief</h3>
-        <p>
-          Your team is introducing a Prediction Engine to software at a car
-          manufacturer which generates live events – things Engineers must
-          respond to.
-        </p>
-        <p>
-          The Engineers must be able to consume this information quickly, and
-          identify issues which require immediate attention.
-        </p>
-        <p>
-          They currently receive alerts as individual emails, which keeps them
-          at their desk (this is far away from the assembly line). They wish to
-          use this application on iPads so they can move around the building
-          whilst monitoring issues.
-        </p>
-        <h3>Instructions</h3>
-        <p>
-          <strong>Please fork this sandbox.</strong> Implement the component in
-          /src/components/AlertStream to solve this challenge. You may add more
-          dependencies to the project if required for this component.
-        </p>
-        <p>You may also create additional components if required.</p>
-
-        <p>
-          Please aim to spend ~1 hour on this challenge. Tests are not required.
-        </p>
-        <p>
-          <i>You can remove this section before sharing your answer.</i>
-        </p>
-      </BriefWrap>
-
       <DebugNav>
         <button disabled={isRunning} onClick={handleStartTapped}>
           start
