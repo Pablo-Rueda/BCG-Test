@@ -1,6 +1,6 @@
 Pablo: This was a technical test I realised some years ago (2021) while looking for job. Here you can find the instructions and my response.
 
-# ==============================================0
+# ===================
 # Alert Stream Challenge
 
 ## Brief
